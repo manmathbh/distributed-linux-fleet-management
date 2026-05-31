@@ -1,0 +1,19 @@
+global:
+  scrape_interval: 1s # High-resolution for HFT tick environments
+  evaluation_interval: 1s
+
+scrape_configs:
+  # 1. Custom Python Agent (Bare Metal)
+  - job_name: 'hft_custom_agent'
+    static_configs:
+      - targets: ['10.70.40.48:8000']
+
+  # 2. Standard Node Exporter (OS Baseline)
+  - job_name: 'node_exporter'
+    static_configs:
+      - targets: ['node-exporter:9100']
+
+  # 3. NVIDIA GPU Exporter (RTX 5000 Metrics)
+  - job_name: 'gpu_exporter'
+    static_configs:
+      - targets: ['gpu-exporter:9835']
