@@ -66,10 +66,10 @@ Prometheus: http://localhost:9090
 ### Dashboard Telemetry (Live Previews)
 Below are live captures of the Grafana NOC dashboard visualizing the real-time, zero-abstraction telemetry pulled directly from the Linux kernel and the host's Quadro RTX 5000 GPU.
 
-**RTX 5000 Compute Utilization
-Custom Agent: Free Memory
-Custom Agent: CPU Utilization
-Custom Agent: Network Rx Bytes**
+**RTX 5000 Compute Utilization**
+**Custom Agent: Free Memory**
+**Custom Agent: CPU Utilization**
+**Custom Agent: Network Rx Bytes**
 
 ---
 
